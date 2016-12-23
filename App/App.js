@@ -15,7 +15,7 @@ server.use(CommandsController);
 
 	//REQUESTS
 	server.get('/', (req, res) => res.redirect('/home'));
-	server.get('/res/lettering.png' , (req,res) => {res.sendFile(__dirname + '/res/lettering.png');});
+	server.get('/res/logo' , (req,res) => {res.sendFile(__dirname + '/res/logo.ico');});
 
 
 server.listen(port, () => {console.log('server launched on port: ' + port)});
